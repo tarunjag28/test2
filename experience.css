@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0A192F;
+    color: #FFFFFF;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #1F1F1F;
+    color: #64FFDA;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.name-graphic {
+    background-color: #1F1F1F;
+    color: #64FFDA;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 20px #64FFDA80;
+}
+
+.name-graphic h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+}
+
+.name-graphic:hover {
+    background-color: #112240;
+    color: #64FFDA;
+    transform: scale(1.05);
+}
+
+nav a {
+    position: relative;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+nav a::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #64FFDA;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav a:hover::after, nav a.active::after {
+    transform: scaleX(1);
+}
+
+nav a:active {
+    color: #64FFDA;
+}
+
+.main {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.main h1 {
+    color: #64FFDA;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.experience-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px 20px;
+    background-color: #0A192F;
+}
+
+.exp-card {
+    background-color: #112240;
+    padding: 30px 35px;
+    border-left: 4px solid #64FFDA;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(100, 255, 218, 0.1);
+}
+
+.exp-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(100, 255, 218, 0.3);
+}
+
+.exp-card h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #64FFDA;
+    margin-bottom: 15px;
+}
+
+.exp-card strong {
+    font-size: 20px;
+    color: #CCD6F6;
+    display: inline;
+    margin-bottom: 10px;
+}
+
+.exp-card p {
+    font-size: 20px;
+    color: #8892B0;
+    margin-bottom: 15px;
+}
+
+.exp-card ul {
+    font-size: 18px;
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #CCD6F6;
+}
+
+.exp-card li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.contact-footer {
+    background-color: #2C3E50;
+    color: #E6F1FF;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 50px;
+}
+
+.contact-footer h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #64FFDA;
+}
+
+.contact-footer p {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.footer-social-icons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer-social-icons a {
+    font-size: 24px;
+    color: #64FFDA;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer-social-icons a:hover {
+    color: #FFFFFF;
+    transform: scale(1.2);
+}
+
+.footer-bottom-text {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #8892B0;
+}
